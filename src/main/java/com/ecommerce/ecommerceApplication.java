@@ -1,9 +1,11 @@
 package com.ecommerce;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringApplication
 public class EcommerceApplication {
-    SpringApplication.run(EcommerceApplication.class,args);
+    public static void main(String[] args) {
+        SpringApplication.run(primarySource:EcommerceApplication.class,args);
+    }
     
 }

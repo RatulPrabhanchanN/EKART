@@ -4,7 +4,8 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.ecommerce.entity.User;
 
-public class UserRepository extends JpaRepository<User, Long> {
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
     public Optional<User> findByUsername(String username);
     public Optional<User> findByEmail(String email);
     public boolean existsByUsername(String username);
